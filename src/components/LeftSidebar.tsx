@@ -37,11 +37,11 @@ const NAVIGATION_ITEMS = [
 
 const LeftSidebar = () => {
   return (
-        <section className="fixed w-[275px] flex flex-col items-stretch h-screen px-6">
+        <section className="sticky top-0 w-[23%] flex flex-col items-stretch h-screen px-4">
         <div className="flex flex-col items-stretch h-full space-y-4 mt-4">
           {
             NAVIGATION_ITEMS.map((item) => (
-              <Link className="hover:bg-white/10 text-3xl transition duration-200 flex item-center justify-start w-fit space-x-6 rounded-3xl py-2 px-6" href={`/${item.title.toLocaleLowerCase()}`} key={item.title}>
+              <Link className="hover:bg-white/10 text-2xl transition duration-200 flex items-center justify-start w-fit space-x-4 rounded-3xl py-2 px-6" href={`/${item.title.toLocaleLowerCase()}`} key={item.title}>
                 <div>
                   <item.icon/>
                 </div>
@@ -54,7 +54,7 @@ const LeftSidebar = () => {
           </button>
           </div>
           <div>
-            <button className="rounded-full flex items-center space-x-2 m-4 bg-transparent p-4 text-center hover:bg-white/10 transition duration-200 w-full justify-between">
+            <button className="rounded-full flex items-center space-x-2 bg-transparent p-4 text-center hover:bg-white/10 transition duration-200 w-full justify-between">
               <div className="flex items-center space-x-2">
               <div className="rounded-full bg-slate-400 w-12 h-12"></div>
               <div className="text-left text-sm">
