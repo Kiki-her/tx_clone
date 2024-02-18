@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <div className="w-full h-full flex justify-center items-center relative bg-black">
       <div className="max-w-[80vw] w-full h-full flex relative">
-        {/* left sidebar for navigation/header */}
         <LeftSidebar/>
         <MainComponent/>
         <RightSection/>
