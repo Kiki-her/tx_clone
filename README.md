@@ -190,3 +190,6 @@ create table bookmarks (
 );
 
 ```
+
+install shadcn/ui
+npm add tailwindcss-animate class-variance-authority clsx tailwind-merge lucide-react
